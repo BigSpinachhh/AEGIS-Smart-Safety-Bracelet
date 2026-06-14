@@ -1,0 +1,32 @@
+# ---- Arduino / ESP32 build artifacts ----
+build/
+.pio/
+*.bin
+*.elf
+*.map
+*.hex
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Backup / temp files ----
+*.bak
+*.tmp
+*~
+*.orig
+
+# ---- EasyEDA / KiCad backups ----
+*.kicad_pcb-bak
+*.000
+
+# ---- Archives left over from extraction ----
+# (keep gerber.zip itself, but ignore stray extracted temp dirs)
+hardware/pcb/gerber/_extracted/
