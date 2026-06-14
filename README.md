@@ -105,15 +105,19 @@ doesn't have to do anything for three of the four trigger paths.
 
 ### Schematic
 
-[![Aegis Schematic](hardware/schematic/schematic.png)](hardware/schematic/schematic.png)
-
-*(Add your EasyEDA schematic export to `hardware/schematic/schematic.png`)*
+[![Aegis Schematic](hardware/schematic/Schematic.png)](hardware/schematic/Schematic.png)
 
 ### Enclosure
 
-CAD renders of the wearable enclosure live in
-[`cad/renders/`](cad/renders/) — see
-[`docs/ENCLOSURE.md`](docs/ENCLOSURE.md) for the full dimensional
+CAD renders of the wearable enclosure live in [`cad/renders/`](cad/renders/):
+
+| View | Preview |
+|---|---|
+| Full view | ![Full](cad/renders/full_view.png) |
+| Top view | ![Top](cad/renders/top_view.png) |
+| Bottom view | ![Bottom](cad/renders/bottom_view.png) |
+
+See [`docs/ENCLOSURE.md`](docs/ENCLOSURE.md) for the full dimensional
 specification (70 × 22 × 10 mm housing, M1.4 screw bosses, 20 mm
 strap lugs, MAX30102 optical window, USB-A charging cutout, and
 SOS button dome).
@@ -179,19 +183,21 @@ Full breakdown and sensor-by-sensor justification:
 │       ├── Aegis_Firmware.ino   # Main ESP32 sketch
 │       └── config.h              # Pins, thresholds, emergency contacts
 ├── hardware/
-│   ├── schematic/                # EasyEDA schematic exports
+│   ├── schematic/
+│   │   └── Schematic.png         # EasyEDA schematic export
 │   └── pcb/
-│       └── gerber/                # Gerber files for fabrication
+│       └── Bracelet_Gerber.zip   # Gerber files for fabrication
 ├── cad/
-│   ├── source/                    # Editable enclosure CAD files
-│   └── renders/                   # STL + preview renders
+│   ├── Bracelet_cad.f3z          # Editable Fusion 360 CAD file
+│   └── renders/                   # Enclosure preview renders
+│       ├── full_view.png
+│       ├── top_view.png
+│       └── bottom_view.png
 ├── docs/
 │   ├── WIRING.md                  # Full pin connection table
 │   ├── BOM.md                     # Bill of materials
 │   ├── ENCLOSURE.md               # Enclosure dimensions/spec
 │   └── SETUP.md                   # Assembly & flashing guide
-├── assets/
-│   └── images/                    # README images / demo photos
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -220,7 +226,7 @@ Full table with notes: [`docs/WIRING.md`](docs/WIRING.md)
 
 ### 1. Hardware Assembly
 
-1. Build the PCB from [`hardware/pcb/gerber/`](hardware/pcb/gerber/)
+1. Build the PCB from [`hardware/pcb/`](hardware/pcb/) using `Bracelet_Gerber.zip`
 2. Wire all modules per [`docs/WIRING.md`](docs/WIRING.md),
    including the voltage divider on the GSM RXD line
 3. Connect the Li-ion battery through the TP4056 module
