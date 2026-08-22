@@ -279,7 +279,7 @@ Full step-by-step guide: [`docs/SETUP.md`](docs/SETUP.md)
 
 ## 👥 Team
 
-Built for **[Zupp Faraway]** by **[Krishna Khokhar / Hala Madrid]**.
+Built for **Zupp Faraway** by **Krishna Khokhar / Hala Madrid**.
 
 ---
 
