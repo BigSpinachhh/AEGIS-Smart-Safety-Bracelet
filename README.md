@@ -11,7 +11,7 @@ GPS tracking, cellular SOS messaging, fall/impact detection, vital-sign
 monitoring, and ambient distress-sound detection into a single
 low-power wearable built around the ESP32.
 
-Built for **[zupp Faraway]** by **[Krishna Khokhar / Hala Madrid]**.
+Built for **zupp Faraway** by **Krishna Khokhar / Hala Madrid**.
 
 ---
 
